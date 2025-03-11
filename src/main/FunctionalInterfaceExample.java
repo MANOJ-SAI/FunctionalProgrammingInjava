@@ -1,5 +1,6 @@
 package main;
 
+import java.security.SecureRandom;
 import java.util.List;
 import java.util.Random;
 import java.util.function.*;
@@ -46,7 +47,7 @@ public class FunctionalInterfaceExample {
 
             @Override
             public Integer get() {
-                Random random = new Random();
+                Random random = new SecureRandom();
                 return random.nextInt(1000);
             }
         };
